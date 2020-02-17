@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Instagram</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/f0a8c93fd0.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <div class="wrapper">
+          <header class="page-header">
+            <nav>
+              <a class="insta"><i class='fab fa-instagram' style='font-size:27px; cursor: pointer;'></i></a>
+              <a class="headcon"><img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="instagram" height="30" width="100"></a>
+              <a class="retro"><i class="fa fa-television" style='font-size:21px; cursor: pointer;'></i></a>
+              <a class="paplane"><i class="far fa-paper-plane" style='font-size:24px; cursor: pointer;'></i></a>
+            </nav>
+          </header>
+          <div class="container"> 
+            <div class="column1">
+             <a class="insta"><i class='fab fa-instagram' style='font-size:25px'></i></a>
+             <a class="headcon" style="font-size:35px">|</a>
+             <a class="headcon"><img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="instagram" height="30" width="100"></a>
+            </div>
+            <div class="column2">
+             <input type="text" id="search" name="search" placeholder="Search..">
+             <i class="fas fa-search" style="font-size:12px"></i>
+            </div>
+            <div class="column3">
+             <a class="icon1"><i class="far fa-compass" style="font-size:25px"></i></a>
+             <a class="icon2"><i class="fa fa-heart-o" style="font-size:25px"></i></a>
+             <a class="icon3"><i class="far fa-user" style="font-size:25px"></i></a>
+            </div>
+        </div>
+          <main class="page-main">
+            <div class="roundpic">
+              <div>
+                <img src="data:image/jpeg;base64,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" alt="instagram">
+                someone
+              </div>
+              <div>
+                <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="instagram">
+                someone
+              </div>
+              <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSCt_57okeFcAHk2rcaxyZEKCSiDTVRPOsXuvh4FgKXGjy4H3Vd" alt="instagram">
+                someone
+              </div>
+              <div>
+                <img src="https://a9p9n2x2.stackpathcdn.com/wp-content/blogs.dir/1/files/2018/10/Michel-Sproles-Bio-3-e1540993572479-767x675.jpg" alt="instagram">
+                someone
+              </div>
+              <div>
+                <img src="https://www.biography.com/.image/ar_8:10%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_620/MTU0OTkwNDUxOTQ5MDUzNDQ3/kanye-west-attends-the-christian-dior-show-as-part-of-the-paris-fashion-week-womenswear-fall-winter-2015-2016-on-march-6-2015-in-paris-france-photo-by-dominique-charriau-wireimage-square.jpg" alt="instagram">
+                someone
+              </div>
+              <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ78bDBD-uyao1LhP3o0tsDPSzX5anbMgXZI7_vXMcJ9dByHbH8" alt="instagram">
+                someone
+              </div>
+              <div>
+                <img src="https://morungexpress.com/sites/default/files/field/image/disha-patani-759.jpg" alt="instagram">
+                someone
+              </div>
+              <div>
+                <img src="https://cdn.cnn.com/cnnnext/dam/assets/180813090658-jeff-bezos-smiling-exlarge-169.jpg" alt="instagram">
+                someone
+              </div>
+              <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT5Bou66P4OQGCqlfKZx1rXC3Fkl42MYOCBrbnupb_x1JxW5U_G" alt="instagram">
+                someone
+              </div>
+              <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTkYHfs9m5fwgnQgDRyKtB65bLFFsIlgeFwFvSvzFvGERwo1-s2" alt="instagram">
+                someone
+              </div>
+              <div>
+                <img src="https://www.biography.com/.image/ar_8:10%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_620/MTY4MDk3MDc5NjQ0NjYxMDA5/greta-thunberg-looks-on-during-a-meeting-in-the-garden-of-the-hotel-de-lassay-ahead-of-a-visit-of-the-french-national-assembly-in-paris-photo-credit-should-read-lionel-bonaventureafp-via-getty-imagesj.jpg" alt="instagram">
+                someone
+              </div>
+            </div>
+            <div class="profile-box">
+                <div class="align">
+                  <img src="https://www.biography.com/.image/ar_8:10%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_620/MTY4MDk3MDc5NjQ0NjYxMDA5/greta-thunberg-looks-on-during-a-meeting-in-the-garden-of-the-hotel-de-lassay-ahead-of-a-visit-of-the-french-national-assembly-in-paris-photo-credit-should-read-lionel-bonaventureafp-via-getty-imagesj.jpg" alt="instagram">
+                  <strong>save planet</strong>
+                </div>
+                <a><i class="fa fa-ellipsis-h" style="font-size:20px"></i></a>
+            </div>
+            <div class="pic-area">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ78bDBD-uyao1LhP3o0tsDPSzX5anbMgXZI7_vXMcJ9dByHbH8" alt="instagram">
+              <div class="area-icon">
+               <div class="lil-icon">
+                <a class="icon2"><i class="fa fa-heart-o" style="font-size:25px; cursor: pointer;"></i></a>
+                <a class="comment"><i class='far fa-comment' style='font-size:24px'></i></a>
+                <a class="paplane"><i class="far fa-paper-plane" style='font-size:24px; cursor: pointer;'></i></a>
+               </div>
+               <a><i class="fa fa-ellipsis-h" style="font-size:20px"></i></a>
+              </div>
+              <div class="writeup">
+                <p>liked by <strong>simon</strong> and <strong>others</strong></p>
+                <p><strong>save planet</strong>Jay-z my fav  rapper</p>
+                <p class="view">view all 41 comments</p>
+              </div>
+            </div>
+            <div class="profile-box">
+              <div class="align">
+                <img src="https://www.biography.com/.image/ar_8:10%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_620/MTY4MDk3MDc5NjQ0NjYxMDA5/greta-thunberg-looks-on-during-a-meeting-in-the-garden-of-the-hotel-de-lassay-ahead-of-a-visit-of-the-french-national-assembly-in-paris-photo-credit-should-read-lionel-bonaventureafp-via-getty-imagesj.jpg" alt="instagram">
+                save planet
+              </div>
+              <a><i class="fa fa-ellipsis-h" style="font-size:20px"></i></a>
+          </div>
+            <div class="pic-area">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ78bDBD-uyao1LhP3o0tsDPSzX5anbMgXZI7_vXMcJ9dByHbH8" alt="instagram">
+              <div class="area-icon">
+               <div class="lil-icon">
+                <a class="icon2"><i class="fa fa-heart-o" style="font-size:25px; cursor: pointer;"></i></a>
+                <a class="comment"><i class='far fa-comment' style='font-size:24px'></i></a>
+                <a class="paplane"><i class="far fa-paper-plane" style='font-size:24px; cursor: pointer;'></i></a>
+               </div>
+               <a><i class="fa fa-ellipsis-h" style="font-size:20px"></i></a>
+              </div>
+              <div class="writeup">
+                <p>liked by <strong>simon</strong> and <strong>others</strong></p>
+                <p><strong>save planet</strong>Jay-z my fav  rapper</p>
+                <p class="view">view all 41 comments</p>
+              </div>
+            </div>
+          </main>
+          <div class="newpost">
+             <a>New post</a>
+          </div>
+          <div class="largebody">
+            <div class="leftside">
+              <div class="largeprofile">
+                <div>
+                  <img src="https://www.biography.com/.image/ar_8:10%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_620/MTY4MDk3MDc5NjQ0NjYxMDA5/greta-thunberg-looks-on-during-a-meeting-in-the-garden-of-the-hotel-de-lassay-ahead-of-a-visit-of-the-french-national-assembly-in-paris-photo-credit-should-read-lionel-bonaventureafp-via-getty-imagesj.jpg" alt="instagram">
+                  save planet
+                </div>
+                <a><i class="fa fa-ellipsis-h" style="font-size:20px"></i></a>
+              </div>
+              <div class="largepic">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ78bDBD-uyao1LhP3o0tsDPSzX5anbMgXZI7_vXMcJ9dByHbH8" alt="instagram">
+                <div class="largepic-icon">
+                  <div class="lil-icon">
+                    <a class="icon2"><i class="fa fa-heart-o" style="font-size:25px; cursor: pointer;"></i></a>
+                    <a class="comment"><i class='far fa-comment' style='font-size:24px'></i></a>
+                    <a class="paplane"><i class="far fa-paper-plane" style='font-size:24px; cursor: pointer;'></i></a>
+                   </div>
+                   <a><i class="fa fa-ellipsis-h" style="font-size:20px"></i></a>
+                </div>
+                <div class="comment-icon">
+                  <p>liked by <strong>simon</strong> and <strong>others</strong></p>
+                  <p><strong>save planet</strong>  Jay-z my fav  rapper</p>
+                  <p class="view">view all 41 comments</p>
+                  <p>1 day ago</p>
+                </div>
+              </div>
+              <div class="largeprofile">
+                <div>
+                  <img src="https://www.biography.com/.image/ar_8:10%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_620/MTY4MDk3MDc5NjQ0NjYxMDA5/greta-thunberg-looks-on-during-a-meeting-in-the-garden-of-the-hotel-de-lassay-ahead-of-a-visit-of-the-french-national-assembly-in-paris-photo-credit-should-read-lionel-bonaventureafp-via-getty-imagesj.jpg" alt="instagram">
+                  save planet
+                </div>
+                <a><i class="fa fa-ellipsis-h" style="font-size:20px"></i></a>
+              </div>
+              <div class="largepic">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ78bDBD-uyao1LhP3o0tsDPSzX5anbMgXZI7_vXMcJ9dByHbH8" alt="instagram">
+                <div class="largepic-icon">
+                  <div class="lil-icon">
+                    <a class="icon2"><i class="fa fa-heart-o" style="font-size:25px; cursor: pointer;"></i></a>
+                    <a class="comment"><i class='far fa-comment' style='font-size:24px'></i></a>
+                    <a class="paplane"><i class="far fa-paper-plane" style='font-size:24px; cursor: pointer;'></i></a>
+                   </div>
+                   <a><i class="fa fa-ellipsis-h" style="font-size:20px"></i></a>
+                </div>
+                <div class="comment-icon">
+                  <p>liked by <strong>simon</strong> and <strong>others</strong></p>
+                  <p><strong>save planet</strong>  Jay-z my fav  rapper</p>
+                  <p class="view">view all 41 comments</p>
+                  <p>1 day ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="rightside">
+                <div class="rightprofile">
+                  <div class="prolook">
+                     <i class="fas fa-user" style="font-size:40px"></i>
+                  </div>
+                  <p>Simon okah</p>
+                </div>
+                <div class="story">
+                  <p>Stories</p>
+                  <p>Watch All</p>
+                </div>
+                <div class="oversec">
+                  <div>
+                    <img src="data:image/jpeg;base64,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" alt="instagram">
+                    <div class="sec">someone </br><span>12 hours ago</span></div>
+                  </div>
+                  <div>
+                    <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="instagram">
+                    <div class="sec">someone </br><span>12 hours ago</span></div>
+                  </div>
+                  <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSCt_57okeFcAHk2rcaxyZEKCSiDTVRPOsXuvh4FgKXGjy4H3Vd" alt="instagram">
+                    <div class="sec">someone </br><span>12 hours ago</span></div>
+                  </div>
+                  <div>
+                    <img src="https://a9p9n2x2.stackpathcdn.com/wp-content/blogs.dir/1/files/2018/10/Michel-Sproles-Bio-3-e1540993572479-767x675.jpg" alt="instagram">
+                    <div class="sec">someone </br><span>12 hours ago</span></div>
+                  </div>
+                  <div>
+                    <img src="https://www.biography.com/.image/ar_8:10%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_620/MTU0OTkwNDUxOTQ5MDUzNDQ3/kanye-west-attends-the-christian-dior-show-as-part-of-the-paris-fashion-week-womenswear-fall-winter-2015-2016-on-march-6-2015-in-paris-france-photo-by-dominique-charriau-wireimage-square.jpg" alt="instagram">
+                    <div class="sec">someone </br><span>12 hours ago</span></div>
+                  </div>
+                  <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ78bDBD-uyao1LhP3o0tsDPSzX5anbMgXZI7_vXMcJ9dByHbH8" alt="instagram">
+                    <div class="sec">someone </br><span>12 hours ago</span></div>
+                  </div>
+                  <div>
+                    <img src="https://morungexpress.com/sites/default/files/field/image/disha-patani-759.jpg" alt="instagram">
+                    <div class="sec">someone </br><span>12 hours ago</span></div>
+                  </div>
+                  <div>
+                    <img src="https://cdn.cnn.com/cnnnext/dam/assets/180813090658-jeff-bezos-smiling-exlarge-169.jpg" alt="instagram">
+                    <div class="sec">someone </br><span>12 hours ago</span></div>
+                  </div>
+                  <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT5Bou66P4OQGCqlfKZx1rXC3Fkl42MYOCBrbnupb_x1JxW5U_G" alt="instagram">
+                    <div class="sec">someone </br><span>12 hours ago</span></div>
+                  </div>
+                  <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTkYHfs9m5fwgnQgDRyKtB65bLFFsIlgeFwFvSvzFvGERwo1-s2" alt="instagram">
+                    <div class="sec">someone </br><span>12 hours ago</span></div>
+                  </div>
+                  <div>
+                    <img src="https://www.biography.com/.image/ar_8:10%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_620/MTY4MDk3MDc5NjQ0NjYxMDA5/greta-thunberg-looks-on-during-a-meeting-in-the-garden-of-the-hotel-de-lassay-ahead-of-a-visit-of-the-french-national-assembly-in-paris-photo-credit-should-read-lionel-bonaventureafp-via-getty-imagesj.jpg" alt="instagram">
+                    <div class="sec">someone </br><span>12 hours ago</span></div>
+                  </div>
+                </div>
+                <div class="story">
+                  <p>Suggestions for you</p>
+                  <p>See All</p>
+                </div>
+                <div class="oversee">
+                  <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTYp1eOSOgn8aeplkSi6nab0xKUNsPCgXznu-HPNkLpNawyx4kX" alt="instagram">
+                    <div class="sec">someone </br><span>12 hours ago</span></div>
+                    <p>follow</p>
+                  </div>
+                  <div>
+                    <img src="https://i.insider.com/5dc8e17e79d757181f485e02?width=600&format=jpeg&auto=webp" alt="instagram">
+                    <div class="sec">someone </br><span>12 hours ago</span></div>
+                    <p>follow</p>
+                  </div>
+                  <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSNjH7LdFDwko0A8IrQSJyF77RxCHGZWaywapE_HOaHnynNPmYR" alt="instagram">
+                    <div class="sec">someone </br><span>12 hours ago</span></div>
+                    <p>follow</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+    </body>
+</html>
